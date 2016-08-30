@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  method: MyString
+  path: MyString
+  host: MyString
+  ip: MyString
+  server_name: MyString
+  date: 2016-08-29 10:14:30
+
+two:
+  method: MyString
+  path: MyString
+  host: MyString
+  ip: MyString
+  server_name: MyString
+  date: 2016-08-29 10:14:30

@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Posts</h1>
+
+<table class=" table table-striped">
+  <thead>
+    <tr>
+      <th>Owner</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+        <td><%= post.owner %></td>
+        <td><%= post.title %></td>
+        <td><%= post.description %></td>
+        <td><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Post', new_post_path, class: "btn btn-danger" %>
+
+<h1>Requests</h1>
+
+<div class="container">
+  <h2>Information</h2>
+  <div class="panel-group">
+    <% Request.order(date: :desc).first(10).each do |request| %>
+      <div class="panel panel-default">
+        <div class="panel-heading"><%= request.method + "  " + request.path %></div>
+        <div class="panel-body">
+          <p>Host: <%= request.host %></p>
+          <p>IP: <%= request.ip %></p>
+          <p>Server Name: <%= request.server_name %></p>
+          <p>Date: <%= request.date %></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
