@@ -9,7 +9,7 @@
   * Rails 5.0.0.1
   * PostgreSQL
 
-* Installation
+* Installation and Deployment
   * Follow this [video](https://www.youtube.com/watch?v=jFBbcleSPoY)
 
 * Other usefull links:
