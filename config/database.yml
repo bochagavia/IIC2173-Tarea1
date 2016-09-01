@@ -88,10 +88,7 @@ test:
 #
 production:
   <<: *default
-  host: postgresql
-  database: railsapp_production
-  username: railsapp
-  password: <%= ENV['POSTGRES_PASSWORD'] %>
+  database: railsapp_development
 
 development:
   <<: *default
