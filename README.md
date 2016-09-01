@@ -1,4 +1,4 @@
-# Requests Rails App ([GoTo App]( http://ec2-52-39-162-81.us-west-2.compute.amazonaws.com:3003))
+# Requests Rails App ([GoTo App](http://ec2-52-43-9-31.us-west-2.compute.amazonaws.com/))
   Web Application to practice request handling and server configuration.
 
 
